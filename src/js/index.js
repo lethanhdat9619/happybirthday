@@ -45,12 +45,17 @@ let removeSecondCanvas = setTimeout(function () {
 let removeText = setTimeout(function () {
 	centerLine.setAttribute("style", "display:none");
 	mail.setAttribute("style", "display:block");
-}, 26800)
+}, 38800)
 
-let test = setTimeout(function () {
-		mail.classList.remove('new')
-		mail.classList.add('open')
-}, 28800)
+// let test = setTimeout(function () {
+// 		mail.classList.remove('new')
+// 		mail.classList.add('open')
+// }, 38800)
+
+mail.addEventListener("click", () => {
+	mail.classList.remove('new')
+	mail.classList.add('open')
+})
 
 fire.addEventListener("click", () => {
 	mail.setAttribute("style", "display:none");

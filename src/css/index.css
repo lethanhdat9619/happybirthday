@@ -244,7 +244,7 @@ body, html{
 .slide--content--one h2{
 	position: relative;
 	line-height: 1em;
-	margin:0;
+	margin: 0 0 15px 0;
 } 
 
 .slide--content--one h1.first{
@@ -605,7 +605,8 @@ body, html{
 	position: absolute;
 	width:0%;
 	height:5px;
-	background:#fff;
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 	top:0;
 	bottom:0;
 	margin:auto;
@@ -656,60 +657,78 @@ body, html{
 
 .third--canvas .center--line h1 > span:nth-child(1){
 	animation-delay: 3s;
+	font-size: 0.85em;
 }
 
 .third--canvas .center--line h1 > span:nth-child(2){
 	animation-delay: 3100ms;
+	font-size: 0.85em;
 }
 
 .third--canvas .center--line h1 > span:nth-child(3){
 	animation-delay: 3200ms;
+	font-size: 0.85em;
 }
 
 .third--canvas .center--line h1 > span:nth-child(4){
 	animation-delay: 3300ms;
+	font-size: 0.85em;
 }
 
 .third--canvas .center--line h1 > span:nth-child(5){
 	animation-delay: 3400ms;
+	font-size: 0.85em;
 }
 
 .third--canvas .center--line h1 > span:nth-child(6){
 	animation-delay: 3500ms;
+	font-size: 0.85em;
 }
 
 .third--canvas .center--line h1 > span:nth-child(7){
 	animation-delay: 3600ms;
+	font-size: 0.85em;
 }
 
 .third--canvas .center--line h1 > span:nth-child(8){
 	animation-delay: 3700ms;
+	font-size: 0.85em;
 }
 
 .third--canvas .center--line h1 > span:nth-child(9){
 	animation-delay: 3800ms;
+	font-size: 0.85em;
 }
 
 .third--canvas .center--line h1 > span:nth-child(10){
 	animation-delay: 3900ms;
+	font-size: 0.85em;
 }
 
 .third--canvas .center--line h1 > span:nth-child(11){
 	animation-delay: 4000ms;
+	font-size: 0.85em;
 }
 
 .third--canvas .center--line h1 > span:nth-child(12){
 	animation-delay: 4100ms;
+	font-size: 0.85em;
 }
 
 .third--canvas .center--line h1 > span:nth-child(13){
 	animation-delay: 4200ms;
+	font-size: 0.85em;
 }
 .third--canvas .center--line h1 > span:nth-child(14){
 	animation-delay: 4300ms;
+	font-size: 0.85em;
 }
 .third--canvas .center--line h1 > span:nth-child(15){
-	animation-delay: 4400ms;
+	animation-delay: 4800ms;
+	font-size: 0.85em;
+}
+.third--canvas .center--line h1 > span:nth-child(16){
+	animation-delay: 12200ms;
 	font-size: 15px;
 }
 
@@ -728,22 +747,40 @@ body, html{
 	height: 150px;
 	object-fit: cover;
 }
+.third--canvas > img#gf1:hover{
+	box-shadow: 0 0 30px -5px #fbc0b9eb;
+	width: 200px; 
+	height: 200px; 
+	z-index: 9999;
+}
 
 .third--canvas > img#gf2{
 	left:45%;
 	bottom:2em;
-	animation-delay: 4800ms;
+	animation-delay: 5800ms;
 	width: 150px;
 	height: 150px;
 	object-fit: cover;
 }
+.third--canvas > img#gf2:hover{
+	box-shadow: 0 0 30px -5px #fbc0b9eb;
+	width: 200px;
+	height: 200px;
+	z-index: 9999;
+}
 
 .third--canvas > img#gf3{
-	left:55%;
-	animation-delay: 5300ms;
+	left: 55%;
+	animation-delay: 7200ms;
 	width: 150px;
 	height: 150px;
 	object-fit: cover;
+}
+.third--canvas > img#gf3:hover{
+	box-shadow: 0 0 30px -5px #fbc0b9eb;
+	width: 200px;
+	height: 200px;
+	z-index: 9999;
 }
 
 @keyframes giftIcon{
@@ -1046,14 +1083,16 @@ body, html{
 	  }
 
 	  .content2 {
-		  margin-top: 10px;
-		  font-size: 14px;
+		  margin-top: 30px !important;
+		  font-size: 14px !important;
+		  color: #ff969f !important;
 	  }
   
 	  .envelope .back .letter p {
 		font-size: 16px;
 		line-height: 25px;
 		color: #ff969f;
+		text-align: center;
 	  }
   
 	  .envelope .front .mail p:first-child {
@@ -1176,7 +1215,8 @@ body, html{
   
 	  .envelope .back .letter div {
 		position: relative;
-		margin-top: 100px;
+		margin-top: 45px;
+		text-align: center;
 	  }
   
 	  .envelope .back .letter label {
@@ -1275,6 +1315,12 @@ body, html{
   
 	  .envelope.send .letter {
 		animation: letter-in 1s forwards;
+	  }
+
+	  .txtFindWay {
+		  font-size: 14px !important;
+		  font-style: italic !important;
+		  color: #ff969f !important;
 	  }
   
   
@@ -1456,7 +1502,7 @@ body, html{
 		margin-left: -2.5px;
 		margin-top: -8.333333333333334px;
 		width: 10px;
-		height: 50px;
+		height: 60px;
   
   
 	  }
@@ -1487,7 +1533,7 @@ body, html{
 		left: 50%;
 		margin-left: -3.3333333333333335px;
 		width: 6.666666666666667px;
-		height: 20.5px;
+		height: 30.5px;
 		animation: fire 2s infinite;
 		cursor: pointer;
 	  }
